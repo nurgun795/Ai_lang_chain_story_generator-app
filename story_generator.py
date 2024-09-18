@@ -16,7 +16,7 @@ def generate_story(character_name, setting, theme):
     prompt = PromptTemplate(template=prompt_template)
 
 
-    model = ChatOpenAI(model_name="gpt-3.5-turbo", api_key="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")
+    model = ChatOpenAI(model_name="gpt-3.5-turbo", api_key="API_KEY")
 
     chain = LLMChain(prompt=prompt, llm=model)
 
